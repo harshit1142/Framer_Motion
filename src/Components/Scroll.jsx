@@ -1,17 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Box from './Box';
 import { images } from '../Images';
 
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
+import Model from './Model';
 
 export default function Scroll() {
     const ref = useRef(null);
     const { scrollXProgress } = useScroll({ container: ref });
-
-   
+    const [selected,setSelected]=useState(null);
+  
 
   return (
+    <>
     <div className='scrol container-fluid d-flex flex-column justify-content-center pt-3'>
     
     <motion.h1 className='text-center' 
@@ -39,10 +41,12 @@ export default function Scroll() {
 
       <div className='images-box' ref={ref}>
           {images.map((item,index)=>{
-            return <Box img={item} val={index}/>
+            return <Box img={item} item={item} val={index} setSelected={setSelected} selected={selected}/>
           })}
           </div>
     </div>
+     <Model selected={selected} setSelected={setSelected}/>
+    </>
   )
 }
 
