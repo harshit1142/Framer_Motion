@@ -68,18 +68,19 @@ body {
 
 ::-webkit-scrollbar {
   height: 5px;
-  width: 5px;
-  background: #fff3;
-  -webkit-border-radius: 1ex;
+  width: 15px;
+  background: rgba(255, 1, 1, 0.2);
+  -webkit-border-radius: 12ex;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--accent);
-  -webkit-border-radius: 1ex;
+  /* background: var(--accent); */
+  background: rgb(0, 178, 248);
+  -webkit-border-radius: 12ex;
 }
 
 ::-webkit-scrollbar-corner {
-  background: #fff3;
+  background: rgba(225, 221, 20, 0.2);
 }
 .box-full{
   width: 100%;
