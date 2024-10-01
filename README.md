@@ -72,6 +72,14 @@ To get started with the project, follow these steps:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## Contributors 
+
+<p align="center">
+  <a href="https://github.com/harshit1142/Framer_Motion/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=harshit1142/Framer_Motion" max={1000} columns={100} anon={1}/>
+  </a>
+</p>
+
 ## Acknowledgments
 
 - [Create React App](https://create-react-app.dev/)
